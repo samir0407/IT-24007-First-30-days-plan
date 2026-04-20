@@ -1,1 +1,65 @@
+package exercise1;
+
+    public class Main{
+    public static void main(String[] args){
+  Car myCar=new Car();
+  myCar.color="White";
+  myCar.model="Nissan";
+  myCar.year=2023;
+  myCar.displayInfo();
+    }
+}
+    
+package exercise1;
+
+public class Car {
+    
+   String color;
+    String model;
+    int year;
+    void displayInfo(){
+        System.out.println("Car's Color : "+color);
+        System.out.println("Car's Model : "+model);
+        System.out.println("Car's Year  : "+year);
+    }
+}
+    
+
+package example2;
+
+public class Main {
+
+    public static void main(String[] args){
+        Student s1 = new Student();
+        s1.Name = "MD.Samir Tahrian";
+        s1.Roll = "IT24007";
+        s1.District = "Lalmonirhat";
+        s1.Number = "01568456332";
+        s1.Show();
+    }
+}
+
+
+package example2;
+
+public class Student {
+   
+    
+    String Name;
+    String Roll; 
+    String District;
+    String Number;
+    
+    void Show() {
+        System.out.println(Name);
+        System.out.println(Roll);
+        System.out.println(District);
+        System.out.println(Number);
+    }
+}
+
+
+
+
+
 
