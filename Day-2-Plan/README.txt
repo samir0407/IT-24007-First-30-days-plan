@@ -1,6 +1,6 @@
 Date-20-04-2026
 
-Day-2
+Day #02
 
 Topic Name:Using encapsulation in java
 
