@@ -1,0 +1,17 @@
+import java.util.HashSet;
+
+public class HashSetExample {
+    public static void main(String[] args) {
+        // Creating a HashSet
+        HashSet<String> colors = new HashSet<>();
+
+        // Adding elements
+        colors.add("Red");
+        colors.add("Green");
+        colors.add("Blue");
+        colors.add("Red"); // Duplicate, will be ignored
+
+        // Displaying the HashSet
+        System.out.println("Colors: " + colors);
+    }
+}
