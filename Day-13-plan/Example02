@@ -1,0 +1,33 @@
+import java.util.HashMap;
+
+public class OrderManagement {
+    private HashMap<Integer, String> orders;
+
+    // Constructor
+    public OrderManagement() {
+        orders = new HashMap<>();
+    }
+
+    // Method to add an order
+    public void addOrder(int orderId, String customerName) {
+        orders.put(orderId, customerName);
+    }
+
+    // Method to display all orders
+    public void displayOrders() {
+        System.out.println("Customer Orders:");
+        for (Integer orderId : orders.keySet()) {
+            System.out.println("Order ID: " + orderId + ", Customer Name: " + orders.get(orderId));
+        }
+    }
+
+    // Main method to test the OrderManagement class
+    public static void main(String[] args) {
+        OrderManagement orderManagement = new OrderManagement();
+        orderManagement.addOrder(101, "Alice");
+        orderManagement.addOrder(102, "Bob");
+        orderManagement.addOrder(103, "Charlie");
+
+        orderManagement.displayOrders();
+    }
+}
