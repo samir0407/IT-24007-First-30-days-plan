@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+
+public class Library {
+    private ArrayList<String> books;
+
+    // Constructor
+    public Library() {
+        books = new ArrayList<>();
+    }
+
+    // Method to add a book
+    public void addBook(String book) {
+        books.add(book);
+    }
+
+    // Method to display all books
+    public void displayBooks() {
+        System.out.println("Books in the Library:");
+        for (String book : books) {
+            System.out.println(book);
+        }
+    }
+
+    // Main method to test the Library class
+    public static void main(String[] args) {
+        Library myLibrary = new Library();
+        myLibrary.addBook("The Great Gatsby");
+        myLibrary.addBook("To Kill a Mockingbird");
+        myLibrary.displayBooks();
+    }
+}
